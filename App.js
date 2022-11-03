@@ -7,6 +7,7 @@ import Landing from './src/Landing';
 import Post from './src/Post';
 import Album from './src/Album';
 import PostDetails from './src/PostDetails';
+import AlbumDetails from './src/AlbumDetails';
 
 
 const Stack = createStackNavigator();
@@ -20,6 +21,7 @@ function App() {
         <Stack.Screen name = "Post" component = {Post} />
         <Stack.Screen name = "PostDetails" component = {PostDetails} /> 
         <Stack.Screen name = "Album" component = {Album} />
+        <Stack.Screen name = "AlbumDetails" component = {AlbumDetails} />
       </Stack.Navigator>
     </NavigationContainer>
   );

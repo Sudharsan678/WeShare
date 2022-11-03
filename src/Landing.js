@@ -7,20 +7,20 @@ ImageBackground } from "react-native";
 const Landing = ({navigation}) => {
     return(
         <View style = {styles.view}>
-            <View sytle = {styles.post}>
+            
             <TouchableOpacity onPress ={() => navigation.navigate('Post')}>
                 <Text >
                     Post
                 </Text>
             </TouchableOpacity>
-            </View>
-           <View>
+            
+          
             <TouchableOpacity onPress={() => navigation.navigate('Album')} >
                 <Text style = {styles.album}>
                     Album
                 </Text>
             </TouchableOpacity>
-            </View>
+           
             
         </View>
     );
@@ -28,11 +28,18 @@ const Landing = ({navigation}) => {
 const styles = StyleSheet.create({
     view : {
         alignSelf: 'center',
-        paddingVertical : 10
+        paddingVertical : 10,
+        borderWidth: 10,
+        marginVertical: 220,
+        alignContent: 'space-around',
+        paddingHorizontal : 100,
+        paddingVertical: 90
     },
     post : {
         borderColor: 'red',
-        borderWidth : 1,
+        borderWidth : 4,
+        marginBottom: 110
+
 
     }
 
