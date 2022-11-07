@@ -16,7 +16,7 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        {/* <Stack.Screen name = "SplashScreen" component = {SplashScreen} /> */}
+        <Stack.Screen name = "SplashScreen" component = {SplashScreen} />
         <Stack.Screen name = "Landing" component = {Landing} />
         <Stack.Screen name = "Post" component = {Post} />
         <Stack.Screen name = "PostDetails" component = {PostDetails} /> 

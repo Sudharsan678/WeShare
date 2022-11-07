@@ -16,22 +16,22 @@ const AlbumDetails = ({route}) => {
     },[])
     const renderItem = ({item}) => {
         const URL=item.url;
-        console.log(URL);
+        // console.log(URL);
         return (
           <View style = {styles.container} >
-            
+            <Text>
             <Image
             source={{uri : URL}}
-           
+            
             style={styles.Image}
             />
-             
+             </Text>
           </View>
         );
       };
     return (
         <View>
-            <FlatList data={photoStore} renderItem={renderItem} />
+            <FlatList data={photoStore} renderItem={renderItem} numColumns = {2} />
         </View>
     );
 }
@@ -41,14 +41,17 @@ const styles = StyleSheet.create({
         width:150,
         height:150,
         alignSelf:'center',
+        alignContent : 'space-around',
         borderRadius:5
       },
       container : {
-        backgroundColor:'white',
+        // backgroundColor:'white',
     margin:10,
     padding:10,
     borderRadius:10,
-    elevation:20
+    flex : 1,
+    elevation:10,
+    // flexDirection :'row'
       }
 })
 

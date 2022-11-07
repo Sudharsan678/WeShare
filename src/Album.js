@@ -41,10 +41,11 @@ const styles = StyleSheet.create({
       flex :1,
       margin:20,
     // alignContent: 'space-around',
-    borderWidth: 1,
+    borderWidth: 2,
     padding : 70,
     resizeMode : 'contain',
     elevation : 10,
+    borderRadius: 32
     },
     text : {
         textAlign : 'center',
